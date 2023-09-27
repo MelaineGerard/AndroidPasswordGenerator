@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/password_label"
+        android:text="@string/password_placeholder"
+        android:textAlignment="center"
+        android:layout_marginBottom="16dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_text"
+        android:id="@+id/password_generate"
+        android:textAlignment="center"
+        android:layout_marginBottom="16dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/copy_password_label"
+        android:id="@+id/password_copy"
+        android:textAlignment="center"
+        android:layout_marginBottom="16dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password_save"
+        android:id="@+id/password_save"
+        android:textAlignment="center"
+        android:layout_marginBottom="16dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password_see"
+        android:id="@+id/password_list"
+        android:textAlignment="center"
+        android:layout_marginBottom="16dp"
+        />
+</LinearLayout>
