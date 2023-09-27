@@ -49,4 +49,5 @@
     </string>
     <string name="password_see">Voir les mots de passes</string>
     <string name="password">Mot de passe</string>
+    <string name="password_complexity_detail">1. Facile, 2. Moyenne, 3. Élevé, 4. Forte</string>
 </resources>

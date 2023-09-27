@@ -1,7 +1,6 @@
 package fr.melaine.gerard.passwordgenerator.dao;
 
 import androidx.room.Dao;
-import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 
@@ -14,13 +13,9 @@ public interface PasswordDao {
     @Query("SELECT * FROM password")
     List<Password> getAll();
 
-    @Query("SELECT * FROM password WHERE uid IN (:passwordIds)")
-    List<Password> loadAllByIds(int[] passwordIds);
-
+    @Query("SELECT * FROM password where password=:password")
+    Password getByPassword(String password);
 
     @Insert
     void insertAll(Password... passwords);
-
-    @Delete
-    void delete(Password password);
 }
